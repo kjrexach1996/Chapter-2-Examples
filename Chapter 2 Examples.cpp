@@ -1,11 +1,23 @@
-// Chapter 2 Examples.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// This program calculates and displays the several values
+// and various percentages for those values.
 
 #include <iostream>
-
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+	double salary = 6000;
+	double percent1 = 5, percent2 = 7, percent3 = 10;
+	double contribution1, contribution2, contribution3;
+	contribution1 = salary * percent1 / 100;
+	contribution2 = salary * percent2 / 100;
+	contribution3 = salary * percent3 / 100;
+	cout << "Amount of contribution at " << percent1 << "% is $" <<
+		contribution1 << endl;
+	cout << "Amount of contribution at " << percent2 << "% is $" <<
+		contribution2 << endl;
+	cout << "Amount of contribution at " << percent3 << "% is $" <<
+		contribution3 << endl;
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
